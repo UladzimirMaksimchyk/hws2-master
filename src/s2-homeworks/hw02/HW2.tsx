@@ -17,7 +17,11 @@ import s2 from '../../s1-main/App.module.css'
 * */
 
 // types
-export type AffairPriorityType =  // need to fix any
+export type AffairPriorityType = {
+    high:string
+    low:string
+    middle:string
+} // need to fix any
 export type AffairType = {
     _id: number// need to fix any
     name: string// need to fix any
@@ -35,7 +39,9 @@ const defaultAffairs: any = [ // need to fix any
 ]
 
 // pure helper functions
-export const filterAffairs = (affairs: any, filter: any): any => { // need to fix any
+export const filterAffairs = (affairs: AffairType, filter: FilterType): any => { // need to fix any
+    if (filter === 'all') return affairs
+    else { "high, low, middle " } 
 
 
     return affairs // need to fix
