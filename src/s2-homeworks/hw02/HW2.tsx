@@ -18,19 +18,21 @@ import s2 from '../../s1-main/App.module.css'
 
 // types
 export type AffairPriorityType = {
-    high:string
-    low:string
-    middle:string
+   priority:  string
 } // need to fix any
+
 export type AffairType = {
     _id: number// need to fix any
     name: string// need to fix any
     priority: AffairPriorityType
 }
+
 export type FilterType = 'all' | AffairPriorityType
 
+
 // constants
-const defaultAffairs: any = [ // need to fix any
+const defaultAffairs:  = [ // need to fix any
+
     {_id: 1, name: 'React', priority: 'high'}, // студенты могут изменить содержимое name и количество элементов в массиве, ...priority не менять!
     {_id: 2, name: 'anime', priority: 'low'},
     {_id: 3, name: 'games', priority: 'low'},
@@ -39,12 +41,12 @@ const defaultAffairs: any = [ // need to fix any
 ]
 
 // pure helper functions
-export const filterAffairs = (affairs: AffairType, filter: FilterType): any => { // need to fix any
-    if (filter === 'all') return affairs
-    else { "high, low, middle " } 
-
-
+export const filterAffairs = (affairs: , filter: ):   => { // need to fix any
+    
+    
     return affairs // need to fix
+
+   
 }
 export const deleteAffair = (affairs: any, _id: any): any => { // need to fix any
 
