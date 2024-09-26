@@ -31,7 +31,7 @@ export type FilterType = 'all' | AffairPriorityType
 
 
 // constants
-const defaultAffairs: = [ // need to fix any
+const defaultAffairs = [ // need to fix any
 
     {_id: 1, name: 'React', priority: 'high'}, // студенты могут изменить содержимое name и количество элементов в массиве, ...priority не менять!
     {_id: 2, name: 'anime', priority: 'low'},
