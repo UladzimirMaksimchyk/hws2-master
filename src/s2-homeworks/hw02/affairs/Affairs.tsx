@@ -5,7 +5,7 @@ import s from './Affairs.module.css'
 
 type AffairsPropsType = {
     data: string // need to fix any
-    setFilter: any
+    setFilter: FilterType
     deleteAffairCallback: any
     filter: FilterType
 }
