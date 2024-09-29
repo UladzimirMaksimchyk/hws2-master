@@ -41,7 +41,7 @@ const defaultAffairs = [ // need to fix any
 ]
 
 // pure helper functions
-export const filterAffairs = (affairs: , filter: ):   => { // need to fix any
+export const filterAffairs = (affairs:AffairType[]  filter: ):   => { // need to fix any
     
     
     return affairs // need to fix
