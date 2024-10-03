@@ -49,10 +49,7 @@ export const filterAffairs = (affairs:AffairType[],filter:FilterType ):AffairTyp
 };
 
     
-
-   
-}
-export const deleteAffair = (affairs: any, _id: any): any => { // need to fix any
+export const deleteAffair = (affairs: AffairType[], _id: any): any => { // need to fix any
 
     return affairs // need to fix
 }
