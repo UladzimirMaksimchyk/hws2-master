@@ -51,7 +51,7 @@ export const filterAffairs = (affairs:AffairType[],filter:FilterType ):AffairTyp
     
 export const deleteAffair = (affairs: AffairType[], _id:number): AffairType[]   => { // need to fix any
 
-    return affairs // need to fix
+    return affairs.filter(affair => affair._id !== _id);// need to fix
 }
 
 function HW2() {
