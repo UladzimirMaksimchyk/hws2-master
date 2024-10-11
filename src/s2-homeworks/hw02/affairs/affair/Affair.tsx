@@ -11,7 +11,8 @@ type AffairPropsType = {
 }
 
 function Affair(props: AffairPropsType) {
-    const deleteCallback = () => {
+    const deleteCallback = () => { 
+         
         // need to fix
     }
 
