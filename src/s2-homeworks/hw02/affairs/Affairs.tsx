@@ -17,7 +17,7 @@ function Affairs(props: AffairsPropsType) {
     const setHigh = () => { props.setFilter('high')
         // need to fix
     }
-    const setMiddle = () => {
+    const setMiddle = () => {  props.setFilter('middle')
         // need to fix
     }
     const setLow = () => {
