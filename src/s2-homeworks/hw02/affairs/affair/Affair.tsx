@@ -13,9 +13,7 @@ type AffairPropsType = {
 function Affair(props: AffairPropsType) {
     const deleteCallback = () => { 
         props.deleteAffairCallback(props.affair._id)
-         
         // need to fix
-        
     }
 
     const nameClass = s.name + ' ' + s2[props.affair.priority]
