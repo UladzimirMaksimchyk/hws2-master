@@ -27,7 +27,7 @@ export const pureAddUserCallback = (name: string, setUsers:  (users: UserType[])
     // need to fix any
     const user = { 
         _id: v1(),
-        name: name
+        name:  name
          // need to fix
     }
     setUsers([...users, user])
