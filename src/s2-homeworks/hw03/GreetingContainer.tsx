@@ -8,7 +8,8 @@ type GreetingContainerPropsType = {
 }
 
 export const pureAddUser = (name:  string, setError:  (error: string) => void, setName:   (name: string) => void, addUserCallback: 
-(name: string) => void) => {
+(name: string) => void) => { 
+
     if (name.trim() === '') {
         
         
@@ -31,7 +32,7 @@ const GreetingContainer: React.FC<GreetingContainerPropsType> = ({
     addUserCallback,
 }) => {
     // деструктуризация пропсов
-    const [name, setName] = useState<any>('') // need to fix any
+    const [name, setName] = useState< null | string>('') // need to fix any
     const [error, setError] = useState<any>('') // need to fix any
 
     const setNameCallback = (e: any) => { // need to fix any
