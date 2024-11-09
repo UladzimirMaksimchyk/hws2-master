@@ -20,7 +20,7 @@ export const pureAddUser = (name:  string, setError:  (error: string) => void, s
 export const pureOnBlur = (name: string, setError:( error: string)) => { // если имя пустое - показать ошибку
 }
 
-export const pureOnEnter = (e: KeyboardEvent<HTMLInputElement>, addUser: any) => {
+export const pureOnEnter = (e: KeyboardEvent<HTMLInputElement>, addUser:) => {
      // если нажата кнопка Enter - добавить
 }
 
@@ -34,7 +34,8 @@ const GreetingContainer: React.FC<GreetingContainerPropsType> = ({
 }) => {
     // деструктуризация пропсов
     const [name, setName] = useState< null | string>('') // need to fix any
-    const [error, setError] = useState<any>('') // need to fix any
+    const [error, setError] = useState< null | string>('')
+     // need to fix any
 
     const setNameCallback = (e: any) => { // need to fix any
         setName('some name') // need to fix
