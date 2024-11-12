@@ -12,6 +12,7 @@ export const pureAddUser = (name:  string, setError:  (error: string) => void, s
 
     if (name.trim() === '') {
         
+        setError('Name is required')
         
         
         // если имя пустое - показать ошибку, иначе - добавить юзера и очистить инпут
