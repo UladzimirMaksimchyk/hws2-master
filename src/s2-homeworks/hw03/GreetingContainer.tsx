@@ -12,8 +12,7 @@ export const pureAddUser = (name:  string, setError:  (error: string) => void, s
 
     if (name.trim() === '') {
         setError('Name is required')}
-        else{
-
+        else{ addUserCallback(name)
         }
     
        
