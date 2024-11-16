@@ -15,13 +15,14 @@ export const pureAddUser = (name:  string, setError:  (error: string) => void, s
         else{ addUserCallback(name)
             setName('')
         }
-    
-       
-        
         // если имя пустое - показать ошибку, иначе - добавить юзера и очистить инпут
 }
 
-export const pureOnBlur = (name: string, setError:( error: string)) => { // если имя пустое - показать ошибку
+export const pureOnBlur = (name: string, setError:( error: string)) => {
+    if (name.trim() === '') {
+
+    }
+    // если имя пустое - показать ошибку
 }
 
 export const pureOnEnter = (e: KeyboardEvent<HTMLInputElement>, addUser:) => {
