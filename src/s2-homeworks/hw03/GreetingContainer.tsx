@@ -51,8 +51,8 @@ const GreetingContainer: React.FC<GreetingContainerPropsType> = ({
 
         error && setError('')
     }
-    const addUser = () => {
-        pureAddUser(name, setError, setName, addUserCallback)
+    const addUser = (addUserCallback: (name: string) => void, setError: (error: string) => void, setName: (name: string) => void, name: string) => {
+        pureAddUser( name, setError, setName, addUserCallback)
     }
 
     const onBlur = () => {
