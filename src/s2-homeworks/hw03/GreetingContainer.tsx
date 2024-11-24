@@ -55,11 +55,11 @@ const GreetingContainer: React.FC<GreetingContainerPropsType> = ({
         pureAddUser( name, setError, setName, addUserCallback)
     }
 
-    const onBlur = (  setError: (error: string), name: string) => {
+    const onBlur = (  setError: (error: string) => void, name: string) => {
         pureOnBlur(name, setError)
     }
 
-    const onEnter = (e: KeyboardEvent<HTMLInputElement>) => {      
+    const onEnter = (e: KeyboardEvent<HTMLInputElement>, addUser: (name: string)) => {      
         pureOnEnter(e, addUser)
     }
 
