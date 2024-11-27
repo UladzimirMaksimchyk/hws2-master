@@ -59,8 +59,8 @@ const GreetingContainer: React.FC<GreetingContainerPropsType> = ({
         pureOnBlur(name, setError)
     }
 
-    const onEnter = (e: KeyboardEvent<HTMLInputElement>, addUser: (name: string) => void) => {
-        pureOnEnter(e, addUser)
+    const onEnter = (e: KeyboardEvent<HTMLInputElement>, addUserCallback: (name: string) => void) => {
+        pureOnEnter(e, addUserCalclback)
     }
 
     const totalUsers = 0 // need to fix
