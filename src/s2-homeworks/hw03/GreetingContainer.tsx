@@ -60,8 +60,10 @@ const GreetingContainer: React.FC<GreetingContainerPropsType> = ({
     }
 
     const onEnter = (e: KeyboardEvent<HTMLInputElement>, addUserCallback: (name: string) => void) => {
-        pureOnEnter(e, addUserCalclback)
+        pureOnEnter(e, )
     }
+
+
 
     const totalUsers = 0 // need to fix
     const lastUserName = 'some name' // need to fix
