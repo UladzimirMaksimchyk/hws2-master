@@ -14,7 +14,8 @@ type GreetingPropsType = {
     // need to fix any
     error:string | null
      // need to fix any
-    totalUsers: any // need to fix any
+    totalUsers:{ id: number, name: string}[]
+     // need to fix any
     lastUserName?: any // need to fix any
 }
 
