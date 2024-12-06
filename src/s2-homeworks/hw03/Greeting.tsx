@@ -16,7 +16,12 @@ type GreetingPropsType = {
      // need to fix any
     totalUsers:{ id: number, name: string}[]
      // need to fix any
-    lastUserName?: any // need to fix any
+    lastUserName?:string   
+
+
+    
+
+     // need to fix any
 }
 
 // презентационная компонента (для верстальщика)
