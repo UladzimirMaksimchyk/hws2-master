@@ -75,8 +75,8 @@ const GreetingContainer: React.FC<GreetingContainerPropsType> = ({
         pureOnEnter(e, addUserCallback, name, setError, setName);
     };
 
-    const totalUsers = 0 // need to fix
-    const lastUserName = 'some name' // need to fix
+    const totalUsers =users.length // need to fix
+    const lastUserName =users.length > 0 ? users[users.length - 1].name : 'No users yet';  // need to fix
 
     return (
         <Greeting
