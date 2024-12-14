@@ -52,17 +52,24 @@ const GreetingContainer: React.FC<GreetingContainerPropsType> = ({
     const [error, setError] = useState<null | string>('')
     // need to fix any
 
+    // const setNameCallback = (e: ChangeEvent<HTMLInputElement>) => {
+    //     // need to fix any
+    //     setName('some name') // need to fix
+    //     error && setError('')
+    // }
     const setNameCallback = (e: ChangeEvent<HTMLInputElement>) => {
-        // need to fix any
-        setName('some name') // need to fix
+        setName(e.target.value);
+        if (error) {
+          setError('');
+        }
+      };
 
-        error && setError('')
-    }
-    const addUser = (addUserCallback: (name: string) => void, setError: (error: string) => void, setName: (name: string) => void, name: string) => {
+
+    const addUser = (name:string ) => {
         pureAddUser(name, setError, setName, addUserCallback)
     }
 
-    const onBlur = (setError: (error: string) => void, name: string) => {
+    const onBlur = (name:string) => {
         pureOnBlur(name, setError)
     }
 
@@ -71,7 +78,7 @@ const GreetingContainer: React.FC<GreetingContainerPropsType> = ({
     //     pureOnEnter(e, addUserCallback);
     // };
 
-    const onEnter = (e: KeyboardEvent<HTMLInputElement>) => {
+    const onEnter = (e: KeyboardEvent<HTMLInputElement>,name:string) => {
         pureOnEnter(e, addUserCallback, name, setError, setName);
     };
 
