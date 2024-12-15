@@ -6,7 +6,7 @@ type GreetingPropsType = {
      // need to fix any
     setNameCallback: (e: ChangeEvent<HTMLInputElement>) => void
      // need to fix any
-    addUser: () => void
+    addUser: (name:string) => void
      // need to fix any
     onBlur: () => void
      // need to fix any
@@ -21,7 +21,7 @@ type GreetingPropsType = {
 }
 
 // презентационная компонента (для верстальщика)
-const Greeting: React.FC<GreetingPropsType> = (
+ const Greeting: React.FC<GreetingPropsType> = (
     {
         name,
         setNameCallback,
