@@ -61,7 +61,7 @@ type GreetingPropsType = {
 
                 <button
                     id={'hw3-button'}
-                    onClick={addUser}
+                    onClick={()=>addUser(name)}
                     className={s.button}
                     disabled={!name.trim()}
                 >
