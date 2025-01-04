@@ -33,8 +33,8 @@ const SuperCheckbox: React.FC<SuperCheckboxPropsType> = (
             }
             if (onChangeChecked) {
                 onChangeChecked(checked);
+            }
         // задачка на написание онченджа
-
     }
 
     const finalInputClassName = s.checkbox
