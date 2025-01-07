@@ -37,7 +37,7 @@ const SuperCheckbox: React.FC<SuperCheckboxPropsType> = (
         // задачка на написание онченджа
     }
 
-    const finalInputClassName = `${s.checkbox} ${className || ''}`
+    const finalInputClassName = s.checkbox+className || ''
     return (
         <label className={s.label}>
             <input
