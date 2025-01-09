@@ -30,9 +30,10 @@ const Stand = () => {
                         error={error}
                         onEnter={() => {
                             setError(
-                                stateForAllInputs.trim()
-                                    ? ''
-                                    : 'Not good'
+                              if
+                              {stateForAllInputs.trim()}
+                              ('')else{"Not God"}
+                                    
                             )
                             setValue('')
                         }}
