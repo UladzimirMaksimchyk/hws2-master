@@ -29,13 +29,12 @@ const Stand = () => {
                         onChangeText={setValue}
                         error={error}
                         onEnter={() => {
-                            setError(
-                              if
-                              {stateForAllInputs.trim()}
-                              ('')else{"Not God"}
-                                    
-                            )
-                            setValue('')
+                            if (stateForAllInputs.trim()) {
+                                setError('');
+                            } else {
+                                setError('Not Good');
+                            }
+                            setValue('');
                         }}
                     />
                 </div>
