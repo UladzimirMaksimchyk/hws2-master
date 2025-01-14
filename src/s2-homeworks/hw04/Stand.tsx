@@ -29,12 +29,12 @@ const Stand = () => {
                         onChangeText={setValue}
                         error={error}
                         onEnter={() => {
-                            if (stateForAllInputs.trim()) {
-                                setError('');
-                            } else {
-                                setError('Not Good');
-                            }
-                            setValue('');
+                            setError(
+                                stateForAllInputs.trim()
+                                    ? ''
+                                    : 'Error'
+                            )
+                            setValue('')
                         }}
                     />
                 </div>
@@ -44,7 +44,7 @@ const Stand = () => {
                 {/*обычная кнопка:*/}
                 <div>
                     <SuperButton id={'hw4-super-button-default'}>
-                        default
+                        def
                     </SuperButton>
                 </div>
                 {/*красная кнопка:*/}
