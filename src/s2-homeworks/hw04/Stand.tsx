@@ -44,7 +44,7 @@ const Stand = () => {
                 {/*обычная кнопка:*/}
                 <div>
                     <SuperButton id={'hw4-super-button-default'}>
-                        def
+                        default
                     </SuperButton>
                 </div>
                 {/*красная кнопка:*/}
