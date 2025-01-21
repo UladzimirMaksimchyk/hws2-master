@@ -20,7 +20,7 @@ export type UserType = {
 }
 
 export type MessagType = {
-    text: string
+    text?: string
     time: string
 }
 
