@@ -21,14 +21,14 @@ export type UserType = {
 
 export type MessagType = {
     text?: string
-    time: string
+    time?: string
 }
 
 
 export type MessageType = {
-    id: number
-    user: UserType
-    message: MessagType
+    id?: number
+    user?: UserType
+    message?: MessagType
 }
 
 // структуру объекта не менять
