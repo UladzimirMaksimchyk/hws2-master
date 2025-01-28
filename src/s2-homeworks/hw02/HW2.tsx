@@ -21,7 +21,7 @@ export type AffairPriorityType = "high"|"middle"|"low"; // need to fix any
 export type AffairType = {
     _id: number // need to fix any
     name: string // need to fix any
-    priority: AffairPriorityType
+    priority?: AffairPriorityType
 }
 export type FilterType = 'all' | AffairPriorityType
 
