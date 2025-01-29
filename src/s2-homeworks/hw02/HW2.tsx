@@ -21,7 +21,7 @@ export type AffairPriorityType = "high"|"middle"|"low"; // need to fix any
 export type AffairType = {
     _id: number // need to fix any
     name: string // need to fix any
-    priority?: AffairPriorityType
+    priority: AffairPriorityType
 }
 export type FilterType = 'all' | AffairPriorityType
 
@@ -32,6 +32,8 @@ const defaultAffairs: AffairType[] = [ // need to fix any
     {_id: 3, name: 'games', priority: 'low'},
     {_id: 4, name: 'work', priority: 'high'},
     {_id: 5, name: 'html & css', priority: 'middle'},
+    {_id: 5, name: 'JS', priority: 'middle'},
+
 ]
 
 // pure helper functions
