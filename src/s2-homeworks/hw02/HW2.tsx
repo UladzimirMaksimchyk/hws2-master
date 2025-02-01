@@ -33,6 +33,7 @@ const defaultAffairs: AffairType[] = [ // need to fix any
     {_id: 4, name: 'work', priority: 'high'},
     {_id: 5, name: 'html & css', priority: 'middle'},
     {_id: 5, name: 'JS', priority: 'middle'},
+    {_id: 1, name: 'React', priority: 'high'}, // студенты могут изменить содержимое name и количество элементов в массиве, ...priority не менять!
 
 ]
 
