@@ -29,7 +29,7 @@ export type FilterType = 'all' | AffairPriorityType
 const defaultAffairs: AffairType[] = [ // need to fix any
     {_id: 1, name: 'React', priority: 'high'}, // студенты могут изменить содержимое name и количество элементов в массиве, ...priority не менять!
     {_id: 2, name: 'anime', priority: 'low'},
-    {_id: 3, name: 'games', priority: 'low'},
+    {_id: 3, name: 'games', priority: 'high'},
     {_id: 4, name: 'work', priority: 'high'},
     {_id: 5, name: 'html & css', priority: 'middle'},
     {_id: 5, name: 'JS', priority: 'middle'},
