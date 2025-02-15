@@ -50,7 +50,7 @@ const Stand = () => {
                 {/*красная кнопка:*/}
                 <div>
                     <SuperButton id={'hw4-super-button-red'} xType={'red'}>
-                        red
+                     blue
                     </SuperButton>
                 </div>
                 {/*задизэйбленная кнопка:*/}
