@@ -40,7 +40,7 @@ export const message0: MessageType = {
     },
     message: {
         text: 'some textsome textsome textsome textsome textsome textsome text', // можно менять
-        time: '22:00', 
+        time: '00:00', 
     },
 }
 export const friendMessage0: MessageType = {
