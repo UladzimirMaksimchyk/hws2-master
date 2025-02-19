@@ -17,6 +17,7 @@ import avatar from './avatar.png'
 export type UserType = {
     avatar: string
     name: string
+    lastname?:string
 }
 
 export type MessagType = {
@@ -29,6 +30,7 @@ export type MessageType = {
     id?: number
     user?: UserType
     message?: MessagType
+
 }
 
 // структуру объекта не менять
