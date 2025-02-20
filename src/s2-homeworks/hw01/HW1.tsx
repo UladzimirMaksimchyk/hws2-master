@@ -17,7 +17,7 @@ import avatar from './avatar.png'
 export type UserType = {
     avatar: string
     name: string
-    lastname?:string
+    lastname?:any
 }
 
 export type MessagType = {
