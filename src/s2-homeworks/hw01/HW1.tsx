@@ -17,7 +17,6 @@ import avatar from './avatar.png'
 export type UserType = {
     avatar: string
     name: string
-    lastname?:boolean
 }
 
 export type MessagType = {
