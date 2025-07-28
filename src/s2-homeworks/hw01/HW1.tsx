@@ -21,7 +21,7 @@ export type UserType = {
 
 export type MessagType = {
     text: string
-    time?: string
+    time?:any
 }
 
 
